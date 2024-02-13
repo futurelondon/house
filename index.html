@@ -53,7 +53,15 @@
             <aside>
                 <a href="https://docs.google.com/document/u/1/d/1RX8HjCCM8wd1y7tCi5NTRJhtYz5cQTh3MA7GQrxoJ44/edit"
                     target="_blank">Read More</a>
-                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button" target="_blank">Join the Club »</a>
+                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank">Join the
+                    Club »</a>
+            </aside>
+            <aside style="justify-content: center;" class="remaining">
+                <p>43 Founder Memberships Remaining</p>
+            </aside>
+            <aside style="justify-content: center;">
+                <a href="https://docs.google.com/document/d/1RX8HjCCM8wd1y7tCi5NTRJhtYz5cQTh3MA7GQrxoJ44/edit#heading=h.uxcsm0mq8emx"
+                    target="_blank" style="color:#000; opacity: 0.6;">I want to pay extra...</a>
             </aside>
         </section>
     </article>
@@ -156,6 +164,26 @@
 
     .jfbs:hover {
         opacity: 1;
+    }
+
+    .remaining {
+        color: #373168;
+        transform: scale(1);
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+        }
+
+        70% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.95);
+        }
     }
 </style>
 
