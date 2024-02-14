@@ -65,8 +65,8 @@
             <br />
             <aside>
                 <a href="https://docs.google.com/document/u/1/d/1RX8HjCCM8wd1y7tCi5NTRJhtYz5cQTh3MA7GQrxoJ44/edit"
-                    target="_blank">Read More</a>
-                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank">Join the
+                    target="_blank" id="read-more">Read More</a>
+                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank" id="join">Join the
                     Club »</a>
             </aside>
             <aside style="justify-content: center;" class="remaining">
@@ -207,5 +207,14 @@
         font-weight: bold;
     }
 </style>
+
+<script>
+    document.getElementById('join').addEventListener('click', function () {
+        amplitude.track('join');
+    });
+    document.getElementById('read-more').addEventListener('click', function () {
+        amplitude.track('read-more');
+    });
+</script>
 
 </html>
