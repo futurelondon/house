@@ -53,6 +53,24 @@
             <h2>The Techno-Optimist Members Club</h2>
         </section>
     </article>
+
+    <article>
+        <section>
+            <aside>
+                <a href="https://docs.google.com/document/u/1/d/1RX8HjCCM8wd1y7tCi5NTRJhtYz5cQTh3MA7GQrxoJ44/edit"
+                    target="_blank" class="read-more">Read More</a>
+                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank">Join
+                    the
+                    Club »</a>
+            </aside>
+            <aside style="justify-content: center;" class="remaining">
+                <p>32 Founder Memberships Remaining</p>
+            </aside>
+            <br />
+            <br />
+        </section>
+    </article>
+
     <article>
         <div class="quote">
             <div>
@@ -80,7 +98,7 @@
 
                 Places are limited, so don’t wait too long.
                 <br />
-                <a target="_blank" href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss"><strong>Sign up now</strong></a>
+                <a target="_blank" href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="join"><strong>Sign up now</strong></a>
                 </p>
             </div>
             <div class="joe">
@@ -150,9 +168,9 @@
     }
 
     section {
-        width: 90%;
+        width: 95%;
         max-width: 405px;
-        margin: 5%;
+        margin: 2.5%;
         text-align: center;
         /* margin-bottom: 6em; */
     }
@@ -236,6 +254,7 @@
 
     .banner {
         width: 100%;
+        max-width: 820px;
     }
 
     /* ul {
@@ -269,11 +288,15 @@
 </style>
 
 <script>
-    document.getElementById('join').addEventListener('click', function () {
-        amplitude.track('join');
+    document.querySelectorAll('.join').forEach(function (el) {
+        el.addEventListener('click', function () {
+            amplitude.track('join');
+        });
     });
-    document.getElementById('read-more').addEventListener('click', function () {
-        amplitude.track('read-more');
+    document.querySelectorAll('read-more').forEach(function (el) {
+        el.addEventListener('click', function () {
+            amplitude.track('read-more');
+        });
     });
 </script>
 
