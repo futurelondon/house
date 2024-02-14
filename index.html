@@ -51,21 +51,56 @@
         <section>
             <h1>Future House</h1>
             <h2>The Techno-Optimist Members Club</h2>
-            <aside style="justify-content: center;">
+        </section>
+    </article>
+    <article>
+        <div class="quote">
+            <div>
+                <p>
+                    👋 Hello <a target="_blank" href="https://futurelondon.org/#manifesto">Children of the Future</a>!
+                    <br /><br />
+                    You’ve probably attended at least one of the <a target="_blank"
+                        href='https://futurelondon.org'>Future
+                        London</a> events
+                    we’ve run, and chances are - you loved it.
+                    <br /><br />
+                    We’ve been working on something huge - our own space to gather, encourage, share, and build - a
+                    techno-optimists community space.
+                    <br /><br />
+                    Early Future London members (you) have a unique opportunity to join this club early as Founder
+                    Members
+                    for only £100/month.<br />
+                    As part of membership, you’ll get:
+                <ul>
+                    <li>24/7 co-working and social space</li>
+                    <li>Access to the most ambitious techno-optimists in London</li>
+                    <li>A space to host your own events</li>
+                    <li>Member-only skill-building events</li>
+                </ul>
+
+                Places are limited, so don’t wait too long.
+                <br />
+                <a target="_blank" href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss"><strong>Sign up now</strong></a>
+                </p>
+            </div>
+            <div class="joe">
                 <div>
-                    <ul>
-                        <li>24/7 Co-working and social space</li>
-                        <li>Member-only events</li>
-                        <li>A venue to run your events</li>
-                    </ul>
-                    <p>For only £100/month</p>
+                    <h3>Joe Reeve</h3>
+                    <p>Founder, Future London</p>
                 </div>
-            </aside>
-            <br />
+                <img src="/images/joe.jpg" alt="Joe Reeve">
+            </div>
+        </div>
+    </article>
+    <br />
+    <br />
+    <article>
+        <section>
             <aside>
                 <a href="https://docs.google.com/document/u/1/d/1RX8HjCCM8wd1y7tCi5NTRJhtYz5cQTh3MA7GQrxoJ44/edit"
                     target="_blank" id="read-more">Read More</a>
-                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank" id="join">Join the
+                <a href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="button join" target="_blank" id="join">Join
+                    the
                     Club »</a>
             </aside>
             <aside style="justify-content: center;" class="remaining">
@@ -83,6 +118,10 @@
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         position: absolute;
         height: 100%;
@@ -92,7 +131,6 @@
         background: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         border-top: 8px solid #e2cae9;
         padding: 0;
         margin: 0;
@@ -116,7 +154,7 @@
         max-width: 405px;
         margin: 5%;
         text-align: center;
-        margin-bottom: 6em;
+        /* margin-bottom: 6em; */
     }
 
     aside a {
@@ -200,10 +238,33 @@
         width: 100%;
     }
 
-    ul {
+    /* ul {
         list-style-type: none;
         padding: 0;
         font-weight: bold;
+    } */
+    .quote {
+        text-align: left;
+        padding: 1em;
+        background-color: #f9f9f9;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.5em 0.5em #f9f9f9;
+        width: 90%;
+        max-width: 820px;
+    }
+
+    .joe {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        float: right;
+        text-align: right;
+    }
+
+    .joe img {
+        width: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
     }
 </style>
 
