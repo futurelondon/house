@@ -62,7 +62,7 @@
                     Club »</a>
             </aside>
             <aside style="justify-content: center;" class="remaining">
-                <p>32 Founder Memberships Remaining</p>
+                <p>31 Founder Memberships Remaining</p>
             </aside>
             <br />
             <br />
@@ -96,7 +96,8 @@
 
                 Places are limited, so don’t wait too long.
                 <br />
-                <a target="_blank" href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="join"><strong>Sign up now</strong></a>
+                <a target="_blank" href="https://buy.stripe.com/9AQ5mgfu26Yud9u7ss" class="join"><strong>Sign up
+                        now</strong></a>
                 </p>
             </div>
             <div class="joe">
@@ -120,7 +121,7 @@
                     Club »</a>
             </aside>
             <aside style="justify-content: center;" class="remaining">
-                <p>32 Founder Memberships Remaining</p>
+                <p>31 Founder Memberships Remaining</p>
             </aside>
             <br />
             <br />
@@ -286,6 +287,11 @@
 </style>
 
 <script>
+    document.querySelectorAll('a').forEach(function (el) {
+        el.addEventListener('click', function () {
+            amplitude.track('click', { href: el.href, text: el.textContent });
+        });
+    });
     document.querySelectorAll('.join').forEach(function (el) {
         el.addEventListener('click', function () {
             amplitude.track('join');
