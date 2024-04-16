@@ -48,6 +48,30 @@
         border: none;
     }
 </style>
+
+<script>
+    function isIOS() {
+        return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+        ].includes(navigator.platform)
+            // iPad on iOS 13 detection
+            || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    }
+
+    if (isIOS()) {
+        document.querySelector('iframe').remove();
+        var a = document.createElement('a');
+        a.href = 'https://futurehouse.uk/deck.pdf';
+        a.innerText = 'Open Deck (iOS)';
+        document.body.appendChild(a);
+        a.click();
+    }
+</script>
 </head>
 
 <body>
