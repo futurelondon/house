@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future House</title>
     <link rel="stylesheet" href="/index.css" />
     <!-- 100% privacy-first analytics -->
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
-            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
 
     <!-- Primary Meta Tags -->
     <title>Future House</title>
@@ -20,311 +27,568 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://futurehouse.uk/" />
     <meta property="og:title" content="Future House" />
-    <meta property="og:description" content="London's Techno-Optimist Members Club" />
-    <meta property="og:image" content="https://futurehouse.uk/images/social-banner.png" />
+    <meta
+      property="og:description"
+      content="London's Techno-Optimist Members Club"
+    />
+    <meta
+      property="og:image"
+      content="https://futurehouse.uk/images/social-banner.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://futurehouse.uk/" />
     <meta property="twitter:title" content="Future House" />
-    <meta property="twitter:description" content="London's Techno-Optimist Members Club" />
-    <meta property="twitter:image" content="https://futurehouse.uk/images/social-banner.png" />
+    <meta
+      property="twitter:description"
+      content="London's Techno-Optimist Members Club"
+    />
+    <meta
+      property="twitter:image"
+      content="https://futurehouse.uk/images/social-banner.png"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://futurehouse.uk/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://futurehouse.uk/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://futurehouse.uk/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="https://futurehouse.uk/images/favicon/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://futurehouse.uk/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://futurehouse.uk/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://futurehouse.uk/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://futurehouse.uk/images/favicon/site.webmanifest"
+    />
 
     <script type="text/javascript">
-        !function () { "use strict"; !function (e, t) { var n = e.amplitude || { _q: [], _iq: {} }; if (n.invoked) e.console && console.error && console.error("Amplitude snippet has been loaded."); else { var r = function (e, t) { e.prototype[t] = function () { return this._q.push({ name: t, args: Array.prototype.slice.call(arguments, 0) }), this } }, s = function (e, t, n) { return function (r) { e._q.push({ name: t, args: Array.prototype.slice.call(n, 0), resolve: r }) } }, o = function (e, t, n) { e[t] = function () { if (n) return { promise: new Promise(s(e, t, Array.prototype.slice.call(arguments))) } } }, i = function (e) { for (var t = 0; t < m.length; t++)o(e, m[t], !1); for (var n = 0; n < g.length; n++)o(e, g[n], !0) }; n.invoked = !0; var u = t.createElement("script"); u.type = "text/javascript", u.integrity = "sha384-x0ik2D45ZDEEEpYpEuDpmj05fY91P7EOZkgdKmq4dKL/ZAVcufJ+nULFtGn0HIZE", u.crossOrigin = "anonymous", u.async = !0, u.src = "https://cdn.amplitude.com/libs/analytics-browser-2.0.0-min.js.gz", u.onload = function () { e.amplitude.runQueuedFunctions || console.log("[Amplitude] Error: could not load SDK") }; var a = t.getElementsByTagName("script")[0]; a.parentNode.insertBefore(u, a); for (var c = function () { return this._q = [], this }, p = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset", "preInsert", "postInsert", "remove", "getUserProperties"], l = 0; l < p.length; l++)r(c, p[l]); n.Identify = c; for (var d = function () { return this._q = [], this }, f = ["getEventProperties", "setProductId", "setQuantity", "setPrice", "setRevenue", "setRevenueType", "setEventProperties"], v = 0; v < f.length; v++)r(d, f[v]); n.Revenue = d; var m = ["getDeviceId", "setDeviceId", "getSessionId", "setSessionId", "getUserId", "setUserId", "setOptOut", "setTransport", "reset", "extendSession"], g = ["init", "add", "remove", "track", "logEvent", "identify", "groupIdentify", "setGroup", "revenue", "flush"]; i(n), n.createInstance = function (e) { return n._iq[e] = { _q: [] }, i(n._iq[e]), n._iq[e] }, e.amplitude = n } }(window, document) }();
+      !(function () {
+        "use strict";
+        !(function (e, t) {
+          var n = e.amplitude || { _q: [], _iq: {} };
+          if (n.invoked)
+            e.console &&
+              console.error &&
+              console.error("Amplitude snippet has been loaded.");
+          else {
+            var r = function (e, t) {
+                e.prototype[t] = function () {
+                  return (
+                    this._q.push({
+                      name: t,
+                      args: Array.prototype.slice.call(arguments, 0),
+                    }),
+                    this
+                  );
+                };
+              },
+              s = function (e, t, n) {
+                return function (r) {
+                  e._q.push({
+                    name: t,
+                    args: Array.prototype.slice.call(n, 0),
+                    resolve: r,
+                  });
+                };
+              },
+              o = function (e, t, n) {
+                e[t] = function () {
+                  if (n)
+                    return {
+                      promise: new Promise(
+                        s(e, t, Array.prototype.slice.call(arguments))
+                      ),
+                    };
+                };
+              },
+              i = function (e) {
+                for (var t = 0; t < m.length; t++) o(e, m[t], !1);
+                for (var n = 0; n < g.length; n++) o(e, g[n], !0);
+              };
+            n.invoked = !0;
+            var u = t.createElement("script");
+            (u.type = "text/javascript"),
+              (u.integrity =
+                "sha384-x0ik2D45ZDEEEpYpEuDpmj05fY91P7EOZkgdKmq4dKL/ZAVcufJ+nULFtGn0HIZE"),
+              (u.crossOrigin = "anonymous"),
+              (u.async = !0),
+              (u.src =
+                "https://cdn.amplitude.com/libs/analytics-browser-2.0.0-min.js.gz"),
+              (u.onload = function () {
+                e.amplitude.runQueuedFunctions ||
+                  console.log("[Amplitude] Error: could not load SDK");
+              });
+            var a = t.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(u, a);
+            for (
+              var c = function () {
+                  return (this._q = []), this;
+                },
+                p = [
+                  "add",
+                  "append",
+                  "clearAll",
+                  "prepend",
+                  "set",
+                  "setOnce",
+                  "unset",
+                  "preInsert",
+                  "postInsert",
+                  "remove",
+                  "getUserProperties",
+                ],
+                l = 0;
+              l < p.length;
+              l++
+            )
+              r(c, p[l]);
+            n.Identify = c;
+            for (
+              var d = function () {
+                  return (this._q = []), this;
+                },
+                f = [
+                  "getEventProperties",
+                  "setProductId",
+                  "setQuantity",
+                  "setPrice",
+                  "setRevenue",
+                  "setRevenueType",
+                  "setEventProperties",
+                ],
+                v = 0;
+              v < f.length;
+              v++
+            )
+              r(d, f[v]);
+            n.Revenue = d;
+            var m = [
+                "getDeviceId",
+                "setDeviceId",
+                "getSessionId",
+                "setSessionId",
+                "getUserId",
+                "setUserId",
+                "setOptOut",
+                "setTransport",
+                "reset",
+                "extendSession",
+              ],
+              g = [
+                "init",
+                "add",
+                "remove",
+                "track",
+                "logEvent",
+                "identify",
+                "groupIdentify",
+                "setGroup",
+                "revenue",
+                "flush",
+              ];
+            i(n),
+              (n.createInstance = function (e) {
+                return (n._iq[e] = { _q: [] }), i(n._iq[e]), n._iq[e];
+              }),
+              (e.amplitude = n);
+          }
+        })(window, document);
+      })();
 
-        amplitude.init('f9a30609964b66eead758b3c33bd3b3e');
+      amplitude.init("f9a30609964b66eead758b3c33bd3b3e");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="background-screen"></div>
 
     <article>
-        <img src="/images/game_laugh.jpg" alt="Future House" class="banner border" />
+      <img
+        src="/images/game_laugh.jpg"
+        alt="Future House"
+        class="banner border"
+      />
     </article>
     <article>
-        <section>
-            <h1>Future House</h1>
-            <h2>London's Techno-Optimist Members Club</h2>
-            <h3>📍 <a href="https://maps.app.goo.gl/hc1VVMevYog23WZD7" target="_blank">Clapton, E5 9NP</a></h3>
-        </section>
+      <section>
+        <h4>
+          <a target="_blank" href="https://x.com/isnit0">Follow on 𝕏</a>&nbsp;<a
+            target="_blank"
+            href="https://futurehouse.uk/join"
+            >Become a Member</a
+          >
+        </h4>
+        <h1>Future House</h1>
+        <h2>London's Techno-Optimist Members Club</h2>
+        <h3>
+          📍
+          <a href="https://maps.app.goo.gl/hc1VVMevYog23WZD7" target="_blank"
+            >Clapton, E5 9NP</a
+          >
+        </h3>
+      </section>
     </article>
 
-
     <article>
-        <div class="quote">
-            <h2>Why Future House?</h2>
-            <p>
-                The UK is not conducive to ambition and optimism - ambition and optimism dissipate quickly when not
-                surrounded by more ambition and optimism. Future House is the place to come for encouragement and
-                excitement.
-                <br />
-                <br />
-                For the first time since the Victorian days, innovators and optimists in the UK have a dedicated place
-                to meet, work, socialise, and encourage one another.
-            </p>
-        </div>
+      <div class="quote">
+        <h2>What is Future House?</h2>
+        <p>
+          The members of Future House are some of the most optimistic &
+          ambitious people in the UK. We believe not only that technology can
+          make the future better for all humans, but that it’s every person’s
+          moral duty to build the future’s technology as fast as possible.<br /><br />
+
+          Our community is made up of world-leading experts in AI, Robotics,
+          Space, Policy, and more. We combine our expertise intentionally to
+          reduce siloed knowledge, and enhance our learning.<br /><br />
+
+          Oh, and we like a good party.<br /><br />
+
+          <a
+            target="_blank"
+            href="https://futurehouse.uk/join"
+            style="color: white"
+            >Join Us</a
+          >
+        </p>
+      </div>
     </article>
 
     <br /><br />
     <br /><br />
 
     <article id="events">
-        <div class="events">
-            <h2>Upcoming Events</h2>
-            <iframe src="https://lu.ma/embed/calendar/cal-eP031AKL1RBuO3j/events?lt=dark" style="width:100%;"
-                height="600" frameborder="0" style="border-radius: 4px;" allowfullscreen=""
-                aria-hidden="false" tabindex="0" class="border"></iframe>
-        </div>
+      <div class="events">
+        <h2>Upcoming Events</h2>
+        <iframe
+          src="https://lu.ma/embed/calendar/cal-eP031AKL1RBuO3j/events?lt=dark"
+          style="width: 100%"
+          height="600"
+          frameborder="0"
+          style="border-radius: 4px"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          class="border"
+        ></iframe>
+      </div>
     </article>
-
 
     <br /><br />
     <br /><br />
 
     <article>
-        <div id="gallery">
-            <a href='/images/jfbs_top.jpg' target="_blank"><img src='/images/jfbs_top.jpg' /></a>
-            <a href='/images/crowd_top.jpg' target="_blank"><img src='/images/crowd_top.jpg' /></a>
-            <a href='/images/drones.png' target="_blank"><img src='/images/drones.png' /></a>
-            <a href='/images/soldering.png' target="_blank"><img src='/images/soldering.png' /></a>
-            <a href='/images/jfbs_laugh.jpg' target="_blank"><img src='/images/jfbs_laugh.jpg' /></a>
-            <a href='/images/crowd.png' target="_blank"><img src='/images/crowd.png' /></a>
-        </div>
+      <div id="gallery">
+        <a href="/images/jfbs_top.jpg" target="_blank"
+          ><img src="/images/jfbs_top.jpg"
+        /></a>
+        <a href="/images/crowd_top.jpg" target="_blank"
+          ><img src="/images/crowd_top.jpg"
+        /></a>
+        <a href="/images/drones.png" target="_blank"
+          ><img src="/images/drones.png"
+        /></a>
+        <a href="/images/soldering.png" target="_blank"
+          ><img src="/images/soldering.png"
+        /></a>
+        <a href="/images/jfbs_laugh.jpg" target="_blank"
+          ><img src="/images/jfbs_laugh.jpg"
+        /></a>
+        <a href="/images/crowd.png" target="_blank"
+          ><img src="/images/crowd.png"
+        /></a>
+      </div>
     </article>
 
     <br /><br />
     <br /><br />
-
 
     <article>
-        <div class="quote">
-            <h2>Future House's Values</h2>
-            <p>At its core, Future House is Techno-Optimistic. We believe that not only can the world be better, but
-                that we have a duty and responsibility to make it better. Technology is humanity’s leverage, it’s our
-                mechanism for having an outsized impact on all future humans, and isn’t something to shy away from.
-                <br />The future is brightest when all humans work effectively together. As such, alongside
-                techno-optimism,
-                we value Humility, Ownership, and Growth.
-            </p>
+      <div class="quote">
+        <h2>Future House's Values</h2>
+        <p>
+          At its core, Future House is Techno-Optimistic. We believe that not
+          only can the world be better, but that we have a duty and
+          responsibility to make it better. Technology is humanity’s leverage,
+          it’s our mechanism for having an outsized impact on all future humans,
+          and isn’t something to shy away from. <br />The future is brightest
+          when all humans work effectively together. As such, alongside
+          techno-optimism, we value Humility, Ownership, and Growth.
+        </p>
 
-            <h3>Humility</h3>
-            <p>An important part of being a techno-optimist is having optimism in people, not just technology.
-                Disagreeing well is part of how we grow, learn, and teach. When in Future House, we expect
-                all members, guests, and event attendees to act with humility & empathy - in particular towards those we
-                disagree with. There are many flavours of techno-optimism - for us to succeed, we need to respect and
-                collaborate with one-another.
-                <br />
-                <br />
-                Don’t mistake humility & empathy for being soft and sensitive. We don’t expect to be liked by everyone,
-                and will often need to tell one-another harsh truths.<br />
-                We bring forward the techno-optimistic future by respectfully infecting everyone with our optimism, in
-                particular those who disagree with us.
-            </p>
+        <h3>Humility</h3>
+        <p>
+          An important part of being a techno-optimist is having optimism in
+          people, not just technology. Disagreeing well is part of how we grow,
+          learn, and teach. When in Future House, we expect all members, guests,
+          and event attendees to act with humility & empathy - in particular
+          towards those we disagree with. There are many flavours of
+          techno-optimism - for us to succeed, we need to respect and
+          collaborate with one-another.
+          <br />
+          <br />
+          Don’t mistake humility & empathy for being soft and sensitive. We
+          don’t expect to be liked by everyone, and will often need to tell
+          one-another harsh truths.<br />
+          We bring forward the techno-optimistic future by respectfully
+          infecting everyone with our optimism, in particular those who disagree
+          with us.
+        </p>
 
-            <h3>Ownership</h3>
-            <p>
-                We’re bringing the techno-optimistic future nearer, but it’s a never ending journey which will have ups
-                and downs. That means we’ll all be collaborating, sharing, and leading at different times. Members at
-                Future House feel ownership of, and agency over the future.<br /><br />
+        <h3>Ownership</h3>
+        <p>
+          We’re bringing the techno-optimistic future nearer, but it’s a never
+          ending journey which will have ups and downs. That means we’ll all be
+          collaborating, sharing, and leading at different times. Members at
+          Future House feel ownership of, and agency over the future.<br /><br />
 
-                With that ownership comes strong opinions. Sometimes, for the good of the techno-optimist community, we
-                will need to disagree & commit, or cut something we’re excited about. These decisions can be difficult,
-                but are key to the success of a vision greater than the sum of its parts.
-            </p>
+          With that ownership comes strong opinions. Sometimes, for the good of
+          the techno-optimist community, we will need to disagree & commit, or
+          cut something we’re excited about. These decisions can be difficult,
+          but are key to the success of a vision greater than the sum of its
+          parts.
+        </p>
 
-            <h3>Growth</h3>
-            <p>We all want to learn. We actively search out new knowledge - we’re curious. That’s why we joined Future
-                House. New things attract us, and contradictions excite us.<br />
-                Each and every techno-optimist has a slightly different vision of the future, and differences are an
-                opportunity to improve everyone’s vision.<br /><br />
+        <h3>Growth</h3>
+        <p>
+          We all want to learn. We actively search out new knowledge - we’re
+          curious. That’s why we joined Future House. New things attract us, and
+          contradictions excite us.<br />
+          Each and every techno-optimist has a slightly different vision of the
+          future, and differences are an opportunity to improve everyone’s
+          vision.<br /><br />
 
-                We acknowledge that an important part of changing reality is understanding it, and so are constantly
-                building a more accurate model of the universe.
-            </p>
-        </div>
+          We acknowledge that an important part of changing reality is
+          understanding it, and so are constantly building a more accurate model
+          of the universe.
+        </p>
+      </div>
     </article>
 
     <br /><br />
     <br /><br />
-
 
     <article>
-        <div class="quote">
-            <h2>Who Are The Members?</h2>
-            <p>The members of Future House are some of the most optimistic & ambitious people in the UK. We believe not
-                only that technology can make the future better for all humans, but that it’s every person’s moral duty
-                to build the future’s technology as fast as possible.<br /><br />
-
-                Our community is made up of world-leading experts in AI, Robotics, Space, Policy, and more. We combine
-                our expertise intentionally to reduce siloed knowledge, and enhance our learning.<br /><br />
-
-                Oh, and we like a good party.
-            </p>
-
-        </div>
+      <div class="quote">
+        <h2>It's you or never</h2>
+        <p>
+          You’re probably looking around and despairing. Technological progress
+          has stalled, the world is at war, people hate one another, culture is
+          deteriorating, and people seem obsessed with finding ways to believe
+          things that are very clearly not true.
+        </p>
+        <p>
+          The bad news is: You’re not imagining it. Something has gone terribly
+          wrong in our civilization.
+          <br />
+          The good news is: You get to be the hero who saves the world.
+        </p>
+        <p>
+          There is no longer time to look at the status quo and expect someone
+          else to change it. Those other people have retired, gone golfing, or
+          died. Those people failed to make our civilization better, and worse
+          yet - failed to prepare us to fix what’s broken.
+        </p>
+        <p>
+          You and I - we - are the last chance for western civilisation to get
+          back on track. If not us, who?
+        </p>
+        <p>
+          The people stopping us from building houses? Nope.<br />
+          The people trying to shut down Nuclear Reactors? Nope.<br />
+          The people striking at the thought of automating trains? Nope.
+        </p>
+        <p>
+          We can have flying cars, colonies on Mars, personalised medicine. All
+          in our lifetimes. But we have to be the ones that make it happen. No
+          one else will do this for us.
+        </p>
+        <p>We have a choice:</p>
+        <ul>
+          <li>
+            Live off the decaying infrastructure and nice wine made by our
+            grandparents
+          </li>
+          <li>
+            Work hard and build the tech that fuels the next 500 years of
+            progress and wonder
+          </li>
+        </ul>
+        <p class="py-2 mb-6 text-sm sm:text-lg">
+          In other words: Will you be an Orphan of The Past, or a
+          <strong class="text-eminence">Child of The Future</strong>?
+        </p>
+      </div>
     </article>
 
-
     <br /><br />
     <br /><br />
     <br /><br />
+  </body>
 
-</body>
-
-<style>
+  <style>
     html {
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     }
 
     * {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
 
-
-
     body {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        color: #fef2ff;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: #fef2ff;
     }
 
     .background-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
 
-        /* https://www.gradient-animator.com/ */
-        background: linear-gradient(270deg, rgb(85, 23, 73), #311452, #2b005b, rgb(37, 18, 66));
-        background-size: 800% 800%;
+      /* https://www.gradient-animator.com/ */
+      background: linear-gradient(
+        270deg,
+        rgb(85, 23, 73),
+        #311452,
+        #2b005b,
+        rgb(37, 18, 66)
+      );
+      background-size: 800% 800%;
 
-        -webkit-animation: BGAnimate 50s ease infinite;
-        -moz-animation: BGAnimate 50s ease infinite;
-        -o-animation: BGAnimate 50s ease infinite;
-        animation: BGAnimate 50s ease infinite;
+      -webkit-animation: BGAnimate 50s ease infinite;
+      -moz-animation: BGAnimate 50s ease infinite;
+      -o-animation: BGAnimate 50s ease infinite;
+      animation: BGAnimate 50s ease infinite;
     }
 
     article,
     aside {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
     aside {
-        justify-content: space-between;
+      justify-content: space-between;
     }
 
     article section {
-        width: 97%;
-        max-width: 432px;
-        margin: 1.5%;
-        text-align: center;
-        /* margin-bottom: 6em; */
+      width: 97%;
+      max-width: 432px;
+      margin: 1.5%;
+      text-align: center;
+      /* margin-bottom: 6em; */
     }
 
     aside a {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        text-decoration: none;
-        color: #ed04f9;
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-decoration: none;
+      color: #ed04f9;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
     }
 
     aside a:first-child {
-        text-align: left;
+      text-align: left;
     }
 
     aside a:last-child {
-        text-align: right;
+      text-align: right;
     }
 
     .button {
-        background-color: #373168;
-        color: white;
-        border-radius: .375rem;
+      background-color: #373168;
+      color: white;
+      border-radius: 0.375rem;
 
-        padding-left: 1rem;
-        padding-right: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .button:hover {
-        background-color: #524899;
+      background-color: #524899;
     }
 
     h1 {
-        font-size: 3em;
-        margin-bottom: 0.5em;
-        margin-top: 0;
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      margin-top: 0;
     }
 
     h2 {
-        font-size: 1.6em;
-        margin-top: 0;
+      font-size: 1.6em;
+      margin-top: 0;
     }
 
     .jfbs {
-        font-size: 4em;
-        text-align: center;
-        width: 90%;
-        max-width: 497px;
-        margin: 0;
-        margin-left: 5%;
-        margin-right: 5%;
-        opacity: 0.6;
-        transition: 0.2s;
-        box-sizing: border-box;
+      font-size: 4em;
+      text-align: center;
+      width: 90%;
+      max-width: 497px;
+      margin: 0;
+      margin-left: 5%;
+      margin-right: 5%;
+      opacity: 0.6;
+      transition: 0.2s;
+      box-sizing: border-box;
     }
 
     .jfbs:hover {
-        opacity: 1;
+      opacity: 1;
     }
 
     .remaining {
-        color: #373168;
-        transform: scale(1);
-        animation: pulse 2s infinite;
+      color: #373168;
+      transform: scale(1);
+      animation: pulse 2s infinite;
     }
 
     @keyframes pulse {
-        0% {
-            transform: scale(0.95);
-        }
+      0% {
+        transform: scale(0.95);
+      }
 
-        70% {
-            transform: scale(1) rotate(3deg);
-        }
+      70% {
+        transform: scale(1) rotate(3deg);
+      }
 
-        100% {
-            transform: scale(0.95) rotate(0deg);
-        }
+      100% {
+        transform: scale(0.95) rotate(0deg);
+      }
     }
 
     .banner {
-        width: 100%;
-        max-width: 820px;
-        border-top: none !important;
-        border-top-left-radius: 0 !important;
-        border-top-right-radius: 0 !important;
+      width: 100%;
+      max-width: 820px;
+      border-top: none !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
     }
 
     /* ul {
@@ -333,139 +597,151 @@
         font-weight: bold;
     } */
     .quote {
-        text-align: left;
-        padding: 1em;
-        width: 90%;
-        max-width: 820px;
+      text-align: left;
+      padding: 1em;
+      width: 90%;
+      max-width: 820px;
 
-
-        background-color: rgba(255, 255, 255, 0.32);
-        -webkit-backdrop-filter: blur(16px);
-        backdrop-filter: blur(16px);
+      background-color: rgba(255, 255, 255, 0.32);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
     }
 
     .quote,
     .border,
     #gallery img {
-        border-radius: 0.5em;
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+      border-radius: 0.5em;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     }
 
     .events {
-        width: 90%;
-        max-width: 820px;
+      width: 90%;
+      max-width: 820px;
     }
 
     .joe {
-        display: flex;
-        flex-direction: row;
-        float: right;
-        text-align: right;
+      display: flex;
+      flex-direction: row;
+      float: right;
+      text-align: right;
     }
 
     .joe img {
-        width: 90px;
-        border-radius: 50%;
-        margin-left: 20px;
+      width: 90px;
+      border-radius: 50%;
+      margin-left: 20px;
     }
 
     h3 a {
-        color: inherit;
-        font-weight: normal;
+      color: inherit;
+      font-weight: normal;
     }
 
+    h4 {
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    h4 a {
+      color: inherit;
+      font-weight: normal;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
 
     #gallery {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
-    #gallery>a {
-        flex: 1 1 auto;
-        width: 50%;
-        padding: 0.5em;
-        min-width: 300px;
+    #gallery > a {
+      flex: 1 1 auto;
+      width: 50%;
+      padding: 0.5em;
+      min-width: 300px;
     }
 
     #gallery img {
-        width: 100%;
+      width: 100%;
     }
 
     @-webkit-keyframes BGAnimate {
-        0% {
-            background-position: 0% 50%
-        }
+      0% {
+        background-position: 0% 50%;
+      }
 
-        50% {
-            background-position: 100% 50%
-        }
+      50% {
+        background-position: 100% 50%;
+      }
 
-        100% {
-            background-position: 0% 50%
-        }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     @-moz-keyframes BGAnimate {
-        0% {
-            background-position: 0% 50%
-        }
+      0% {
+        background-position: 0% 50%;
+      }
 
-        50% {
-            background-position: 100% 50%
-        }
+      50% {
+        background-position: 100% 50%;
+      }
 
-        100% {
-            background-position: 0% 50%
-        }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     @-o-keyframes BGAnimate {
-        0% {
-            background-position: 0% 50%
-        }
+      0% {
+        background-position: 0% 50%;
+      }
 
-        50% {
-            background-position: 100% 50%
-        }
+      50% {
+        background-position: 100% 50%;
+      }
 
-        100% {
-            background-position: 0% 50%
-        }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     @keyframes BGAnimate {
-        0% {
-            background-position: 0% 50%
-        }
+      0% {
+        background-position: 0% 50%;
+      }
 
-        50% {
-            background-position: 100% 50%
-        }
+      50% {
+        background-position: 100% 50%;
+      }
 
-        100% {
-            background-position: 0% 50%
-        }
+      100% {
+        background-position: 0% 50%;
+      }
     }
-</style>
+  </style>
 
-<script>
-    document.querySelectorAll('a').forEach(function (el) {
-        el.addEventListener('click', function () {
-            amplitude.track('click', { href: el.href, text: el.textContent });
-        });
+  <script>
+    document.querySelectorAll("a").forEach(function (el) {
+      el.addEventListener("click", function () {
+        amplitude.track("click", { href: el.href, text: el.textContent });
+      });
     });
-    document.querySelectorAll('.join').forEach(function (el) {
-        el.addEventListener('click', function () {
-            amplitude.track('join');
-        });
+    document.querySelectorAll(".join").forEach(function (el) {
+      el.addEventListener("click", function () {
+        amplitude.track("join");
+      });
     });
-    document.querySelectorAll('read-more').forEach(function (el) {
-        el.addEventListener('click', function () {
-            amplitude.track('read-more');
-        });
+    document.querySelectorAll("read-more").forEach(function (el) {
+      el.addEventListener("click", function () {
+        amplitude.track("read-more");
+      });
     });
-</script>
-
+  </script>
 </html>
